@@ -1,25 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 16px;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 16px;
 }
 
 main {
-  margin: 0 auto;
-  max-width: 1500px;
-  padding: 20px;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.375em;
+    line-height: 1.375em;
+    word-break: break-all;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.375em;
+    word-break: break-all;
+}
+
+img {
+    width: 9.375em;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-weight: bold;
+    justify-content: flex-start;
+    order: 2;
+    padding: 0.5em;
+}
+
+li {
+    padding-right: 0.5em;
 }
 
 .cards {
-  background: #eee;
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.card {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.625em;
+    max-width: 29.375em;
+    max-height: 18.750em;
+    border: 0.125em solid #aaa;
+    border-radius: 0.313em;
+    background: #fff;
+}
+
+.card > * {
+    padding: 8px;
+}
+
+.card__div {
+    display: flex;
+    flex: auto;
+    height: 30%;
+}
+
+ .card__text {
+     overflow-y: auto;
+ }
